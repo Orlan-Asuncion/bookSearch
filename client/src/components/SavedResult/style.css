@@ -1,11 +1,11 @@
 .card{
     border-radius: 10px;
-    background-color: lightgrey
+    background-color: rgb(233, 161, 161)
 }
 
 .saved-list{
     border-radius: 15px;
-    background-color: lightyellow
+    background-color: #e6e663
 }
 
 .deleteBook {
