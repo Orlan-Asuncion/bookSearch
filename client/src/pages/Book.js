@@ -48,11 +48,13 @@ class Books extends Component {
         title: this.state.title,
         author: this.state.author,
         description: this.state.description,
-        image: this.state.image
+        image: this.state.image,
+        link: this.state.link,
+        date: this.state.link
         .then(res => this.loadBooks())
-        .catch(err => console.log(err));
+        .catch(err => console.log(err))
     }
-  };
+   },
 
   render() {
     return (
@@ -60,7 +62,7 @@ class Books extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>What Books I Should Read?</h1>
             </Jumbotron>
             <form>
               <Input

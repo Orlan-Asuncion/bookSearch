@@ -15,7 +15,7 @@ const bookSeed = [
     description:"This is a collection of essays on the films as well as the websites, games and The Animatrix video and DVD.",
     image:"https://books.google.com/books?id=bGi9FB3uEXkC&printsec=frontcover&dq=editions:d3IhAp4y_L4C&hl=en&sa=X&ved=2ahUKEwj7mIyj4_bjAhXszVkKHZ-WDlgQ6wEwAHoECAAQAQ",
     link: "https://books.google.com/books?isbn=1904764320",
-      date: new Date(Date.now())
+    date: new Date(Date.now())
   },
   {
     title: "Lord of the Rings: Tolkiens World Audiences",
