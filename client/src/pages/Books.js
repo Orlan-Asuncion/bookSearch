@@ -48,13 +48,13 @@ class Books extends Component {
         title: this.state.title,
         author: this.state.author,
         description: this.state.description,
-        image: this.state.image,
-        link: this.state.link,
-        date: this.state.link
+        image: this.state.image
+      })       
         .then(res => this.loadBooks())
         .catch(err => console.log(err))
     }
-   },
+   };
+
 
   render() {
     return (
@@ -83,12 +83,12 @@ class Books extends Component {
                 name="description"
                 placeholder="Description (Optional)"
               />
-              <FormBtn
+               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Book
-              </FormBtn>
+              </FormBtn> 
             </form>
           </Col>
           <Col size="md-6 sm-12">

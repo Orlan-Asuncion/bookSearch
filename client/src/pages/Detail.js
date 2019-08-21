@@ -15,6 +15,12 @@ class Detail extends Component {
       .then(res => this.setState({ book: res.data }))
       .catch(err => console.log(err));
   }
+ //function to remove book by id
+ handleDeleteButton = id => {
+  API.deleteBook(id)
+      .then(res => this.componentDidMount())
+      .catch(err => console.log(err))
+} 
 
   render() {
     return (
